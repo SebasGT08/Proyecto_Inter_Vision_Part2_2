@@ -1,4 +1,4 @@
-#Tue Jul 30 02:58:34 ECT 2024
+#Tue Jul 30 03:21:56 ECT 2024
 base.0=/home/sebas/Documentos/CICLO_7/VISION/PROYECTO/PARTE2_FIN/app_android/opencv/build/intermediates/dex/debugAndroidTest/mergeLibDexDebugAndroidTest/0/classes.dex
 base.1=/home/sebas/Documentos/CICLO_7/VISION/PROYECTO/PARTE2_FIN/app_android/opencv/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
 base.2=/home/sebas/Documentos/CICLO_7/VISION/PROYECTO/PARTE2_FIN/app_android/opencv/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/2/classes.dex
