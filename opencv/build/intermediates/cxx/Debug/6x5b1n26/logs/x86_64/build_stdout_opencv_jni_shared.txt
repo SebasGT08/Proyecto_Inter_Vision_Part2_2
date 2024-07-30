@@ -1,0 +1,3 @@
+ninja: Entering directory `/home/sebas/Documentos/CICLO_7/VISION/PROYECTO/PARTE2_FIN/app_android/opencv/.cxx/Debug/6x5b1n26/x86_64'
+[1/2] Building CXX object CMakeFiles/opencv_jni_shared.dir/dummy.cpp.o
+[2/2] Linking CXX static library libopencv_jni_shared.a

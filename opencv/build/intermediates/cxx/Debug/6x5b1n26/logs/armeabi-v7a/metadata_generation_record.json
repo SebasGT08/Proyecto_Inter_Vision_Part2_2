@@ -1,0 +1,44 @@
+[
+  {
+    "level_": 0,
+    "message_": "Start JSON generation. Platform version: 21 min SDK version: armeabi-v7a",
+    "file_": "/home/sebas/Documentos/CICLO_7/VISION/PROYECTO/PARTE2_FIN/app_android/opencv/libcxx_helper/CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 785415239
+  },
+  {
+    "level_": 0,
+    "message_": "JSON \u0027/home/sebas/Documentos/CICLO_7/VISION/PROYECTO/PARTE2_FIN/app_android/opencv/.cxx/Debug/6x5b1n26/armeabi-v7a/android_gradle_build.json\u0027 was up-to-date",
+    "file_": "/home/sebas/Documentos/CICLO_7/VISION/PROYECTO/PARTE2_FIN/app_android/opencv/libcxx_helper/CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -197514635
+  },
+  {
+    "level_": 0,
+    "message_": "JSON generation completed without problems",
+    "file_": "/home/sebas/Documentos/CICLO_7/VISION/PROYECTO/PARTE2_FIN/app_android/opencv/libcxx_helper/CMakeLists.txt",
+    "tag_": "debug|armeabi-v7a",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1281023272
+  }
+]

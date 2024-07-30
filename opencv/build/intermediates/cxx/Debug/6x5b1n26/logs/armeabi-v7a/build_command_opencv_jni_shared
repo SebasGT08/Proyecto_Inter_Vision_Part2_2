@@ -1,0 +1,4 @@
+/home/sebas/Android/Sdk/cmake/3.18.1/bin/ninja \
+  -C \
+  /home/sebas/Documentos/CICLO_7/VISION/PROYECTO/PARTE2_FIN/app_android/opencv/.cxx/Debug/6x5b1n26/armeabi-v7a \
+  opencv_jni_shared

@@ -1,0 +1,1 @@
+/home/sebas/Documentos/CICLO_7/VISION/PROYECTO/PARTE2_FIN/app_android/opencv/build/intermediates/cxx/Debug/6x5b1n26/obj/armeabi-v7a
