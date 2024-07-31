@@ -46,7 +46,7 @@ public class ImagePickerActivity extends AppCompatActivity {
         System.loadLibrary("proyecto_vison");
     }
 
-    public native void calcularHOG(long matAddrRgba, long matAddrHOG);
+    public native void calcularHOG(long matAddrRgba, long matAddrHOG, long matAddrProcessed);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -147,7 +147,8 @@ public class ImagePickerActivity extends AppCompatActivity {
         Imgproc.resize(matOriginal, resizedImage, new Size(28, 28));
 
         Mat matHOG = new Mat();
-        calcularHOG(resizedImage.getNativeObjAddr(), matHOG.getNativeObjAddr());
+        Mat matProcessed = new Mat();
+        calcularHOG(resizedImage.getNativeObjAddr(), matHOG.getNativeObjAddr(),matProcessed.getNativeObjAddr());
 
         // Mensajes de depuración
         Log.d(TAG, "Tipo de matHOG: " + matHOG.type());
@@ -194,18 +195,24 @@ public class ImagePickerActivity extends AppCompatActivity {
 
         Toast.makeText(this, "Predicción: " + predictedClass, Toast.LENGTH_LONG).show();
 
-        // Convertir matHOG a Bitmap para visualizar
-        Mat matHOG_8UC1 = new Mat();
-        matHOG.convertTo(matHOG_8UC1, CvType.CV_8UC1);
-        Bitmap bitmapHOG = Bitmap.createBitmap(matHOG_8UC1.cols(), matHOG_8UC1.rows(), Bitmap.Config.ARGB_8888);
-        Utils.matToBitmap(matHOG_8UC1, bitmapHOG);
-        imageViewHOG.setImageBitmap(bitmapHOG);
+        // Convertir matProcessed a Bitmap para visualizar
+        Bitmap bitmapProcessed = Bitmap.createBitmap(matProcessed.cols(), matProcessed.rows(), Bitmap.Config.ARGB_8888);
+        Utils.matToBitmap(matProcessed, bitmapProcessed);
+
+        // Asegúrate de que el Bitmap se creó correctamente
+        if (bitmapProcessed == null) {
+            Log.e(TAG, "Error al convertir matProcessed a Bitmap");
+        } else {
+            Log.d(TAG, "Bitmap Procesado: Width = " + bitmapProcessed.getWidth() + ", Height = " + bitmapProcessed.getHeight());
+            imageViewHOG.setImageBitmap(bitmapProcessed);
+            Log.d(TAG, "Bitmap Procesado establecido correctamente en ImageView");
+        }
 
         // Liberar memoria de las matrices no necesarias
         matOriginal.release();
         matHOG.release();
         resizedImage.release();
-        matHOG_8UC1.release();
+        matProcessed.release();
     }
 
 
