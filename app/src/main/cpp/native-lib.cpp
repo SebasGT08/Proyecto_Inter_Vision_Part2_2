@@ -42,11 +42,12 @@ Java_com_example_proyecto_1vison_ImagePickerActivity_calcularHOG(JNIEnv* env, jo
     // Configurar los parámetros de HOG para que coincidan con los del entrenamiento
     HOGDescriptor hog(
             Size(28, 28), // winSize
-            Size(12, 12), // blockSize
-            Size(4, 4),   // blockStride
-            Size(4, 4),   // cellSize
+            Size(14, 14), // blockSize
+            Size(7, 7),   // blockStride
+            Size(7, 7),   // cellSize
             9             // nbins
     );
+
 
     // Calcular el descriptor HOG
     vector<float> descriptors;
